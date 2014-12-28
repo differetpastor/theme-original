@@ -74,12 +74,14 @@
               <div class="nav-collapse collapse">
                 <ul class="nav pull-right">
                 
+                  
+                  
                   {% if pages %}
                   {% for page in pages %}
                   <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">Why this blog?</a></li>
-                  <li><a href="/">Blog</a></li>
                   {% endfor %}
                   {% endif %}
+                  <li><a href="/">Blog</a></li>
                 </ul>
               </div>
               {% endif %}
